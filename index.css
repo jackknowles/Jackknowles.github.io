@@ -1,111 +1,25 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-header {
-    width: 100%;
-    position: sticky;
-    z-index: 5;
-    top: 0px;
-    background-color: coral;
+/* Full body styling */
+
+body {
+  width: 1200px;
+  margin: 0 auto;
+  background-img: url();
+  background-color: #444;
 }
 
-header h1 {
-    letter-spacing: 6px;
-    font-size: 3em;
-    padding-top: 15px;
+main {
+  background-color: white;
 }
 
-header h1, nav {
-    margin: 0 auto;
-    text-align: center;
-    padding-bottom: 10px;
-}
+/* Styling the Main Header */
 
-h1, h2{
-    font-family: 'Bebas Neue', cursive;
-}
-
-section li, nav li {
-    display: inline-block;
-    margin: 0 20px;
-    padding: 10px;
-}
-
-section li a, nav li a {
-    border-radius: 20px;
-    padding: 10px 15px;
-    background-color: paleturquoise;
-    text-decoration: none;
-    font-weight: 700;
-}
-
-li a:link {
-    color: black;
-}
-
-li a:visited {
-    color: black;
-}
-
-li a:hover {
-    color: black;
-    background-color: orange;
-    text-decoration: underline;
-}
-
-section {
-    padding: 50px;
-    position: relative;
-}
-
-h2 {
-    letter-spacing: 3px;
-    font-size: 2em;
-    padding: 10px;
-}
-
-.stripe_one {
-    background-color: paleturquoise;
-}
-
-.stripe_two {
-    background-color: lightgrey;
-}
-
-.service_tagline {
-    border-radius: 15px;
-    margin: 20px auto;
-    width: 500px;
-    height: 200px;
-    display: inline-block;
-    padding: 15px;
-    background-color: lightgrey;
-
-}
-
-#service_two {
-    position: absolute;
-    top: 111px;
-    left: 45%;
-}
-
-.service_tagline h3 {
-    text-align: center;
-    margin: 10px 0;
-}
-
-.service_subtitle {
-    text-align: center;
-    font-weight: 600;
-    color: coral;
-    padding: 10px;
-}
-
-#services p {
-    text-align: center;
-    padding: 10px;
+.main-header {
+  background-color: red;
 }
