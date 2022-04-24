@@ -11,19 +11,25 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="index.css" />
   </head>
   <body>
-    <header class="main-header">
-      <h1>Jack Knowles Web Development</h1>
-      <nav>
-        <a href="#about">About Me</a>
-        <a href="#projects">My Projects</a>
-        <a href="#contact">Contact</a>
+    <header class="main-header clearfix">
+      <div class="main-heading">
+        <h1>Jack Knowles Web Development</h1>
+      </div>
+      <nav class="main-nav">
+        <a href="#about" class="main-nav-link">About Me</a>
+        <a href="#projects" class="main-nav-link">My Projects</a>
+        <a href="#contact" class="main-nav-link">Contact</a>
       </nav>
     </header>
     <main>
-      <section id="about" class="content_block stripe_one">
+      <section id="about" class="content about">
         <h2>About Me</h2>
         <p>
           I am currently teaching myself front-end web development with the
@@ -31,55 +37,61 @@
           Codecademy Front-End Developer track and using highly recommended
           Udemy courses, I'm learning HTML, CSS, Javascript and React. In
           addition, I plan to learn more about using Git, Github, Command Line
-          (usin GitBash) to get myself ready for professional work.
+          (using GitBash) to get myself ready for professional work.
         </p>
         <p>
           At the moment I work as a Senior Scientist for the UK Health Security
-          Agency. I have my time as a scientist and learning lots about
-          microbiology and biomedical sciences. However, after years of doing
-          this I've developed a stronger interest in web design and development.
+          Agency. I have enjoyed my time as a scientist, and had fun learning
+          lots about microbiology and biomedical sciences. However, I've
+          developed a strong interest in web design and development.
         </p>
       </section>
-      <section id="projects" class="content_block stripe_two">
+      <section id="projects" class="content projects">
         <h2>My Projects</h2>
         <p>
           Here is a record of the projects I have completed starting with the
           most recent. I've included links to view my finished projects and each
           respective repository to view their coding.
         </p>
-        <ul>
+        <ul class="project-list clearfix">
           <li>
-            <a href="#"><h3>Static Blog Page</h3></a>
-            Blog Webite
-            <p>Built using only HTML and CSS.</p>
-            <p>
-              The project itself was part of the Udemy course
-              <a
-                href="https://www.udemy.com/share/101Wqo3@OI_sVO_umCsfD-Dsi5LSIRv7FuXEfNLoEkLdVU7V7fnZ2IwEl73IMtKcSeaxZ0mE1Q==/"
-                >Build Responsive Real-World Websites wth HTML and CSS by Jonas
-                Schmedtmann</a
-              >. Although I will be tweaking this as I go to make it my own full
-              credit is given to the instructor.
-            </p>
+            <a href="Projects/04_layouts/index.html" class="project"
+              ><h3>Static Blog Page</h3>
+              <p>Built using HTML and CSS.</p>
+              <p>
+                I build this projects as part of the HTML and CSS Udemy course
+                by Jonas Schmedtmann. A simple static blog page with an aside.
+              </p></a
+            >
           </li>
           <li>
-            <a href="#"><h3>Under Construction</h3></a>
-            Blog Webite
-            <p>Built using __________</p>
-            <p>
-              This is just a placeholder for future projects. I'm not expecting
-              anyone to currently be viewing this page and I want to play around
-              with design and layouts. Therefore it makes sense to me to have
-              this here.
-            </p>
+            <a
+              class="project"
+              href="./Projects/04_css_challenge_1_float/index.html"
+              ><h3>Product Listing</h3>
+              <p>Built using HTML and CSS</p>
+              <p>
+                I build this myself from a code challenge. An individual product
+                listing using buttons and older positioning techniques.
+              </p></a
+            >
+          </li>
+          <li>
+            <a class="project" href="#"
+              ><h3>Under Construction</h3>
+              <p>Built using __________</p>
+              <p>
+                This is just a placeholder for future projects to play around
+                with design and layouts.
+              </p></a
+            >
           </li>
         </ul>
       </section>
-      <section id="contact" class="content_block stripe_two">
+      <section id="contact" class="content about">
         <h2>contact</h2>
         <p>
-          At this point I really don't expect anybody to get in touch, However,
-          if you do just pop me a quick email:
+          If you want to get in touch just pop me a quick email via:
           <a href="mailto:jknowles.webdev@gmail.com"
             >jknowles.webdev@gmail.com</a
           >.
