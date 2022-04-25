@@ -4,225 +4,175 @@
   box-sizing: border-box;
 }
 
-/* above is a global reset - set it for each project*/
+/* Whole-article styles */
 
-body {
+.shop-item {
+  margin: 50px auto;
+  width: 900px;
   font-family: sans-serif;
-  color: #444;
-  border-top: 8px solid #1098ad;
-  position: relative;
+  border: 3px solid #000;
 }
 
-.container {
-  width: 1200px;
-  margin: 0 auto;
-}
+/* styling the header */
 
-.main-header {
-  background-color: #ece9e9;
-  padding: 20px 40px;
-  margin-bottom: 60px;
-  /* height: 80px; */
-}
-
-nav {
-  font-size: 18px;
-}
-
-article {
-  margin-bottom: 60px;
-}
-
-.post-header {
-  margin-bottom: 40px;
-}
-
-aside {
-  background-color: #ece9e9;
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
-  padding: 50px 40px;
-}
-
-h1,
-h2,
-h3 {
-  color: #1098ad;
-}
-
-h1 {
-  font-size: 26px;
-  text-transform: uppercase;
-  font-style: italic;
-}
-
-h2 {
-  font-size: 40px;
-  margin-bottom: 30px;
-  position: relative;
-}
-
-h3 {
-  font-size: 30px;
-  margin-bottom: 20px;
-  margin-top: 40px;
-}
-
-h4 {
-  font-size: 20px;
-  text-transform: uppercase;
+.item-title {
+  padding: 20px 0;
   text-align: center;
-  margin-bottom: 40px;
+  text-transform: uppercase;
+  background-color: #f7f7f7;
+  font-weight: 700;
+  position: relative;
 }
 
-p {
-  font-size: 22px;
+.item-title::after {
+  content: "SALE";
+  color: #fff;
+  background-color: #ff1e00;
+  padding: 5px 15px;
+  letter-spacing: 5px;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+}
+
+/* Styling product details */
+
+.product-img {
+  width: 250px;
+  float: left;
+}
+
+.price {
+  font-size: 24px;
+  letter-spacing: 2px;
+  float: left;
+}
+
+.shipping {
+  color: #777;
+  font-size: 12px;
+  float: right;
+  padding-top: 5px;
+}
+
+.price-shipping,
+h3 {
+  padding: 10px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.detail-blurb {
+  margin: 30px 0;
+}
+
+.details li {
+  list-style: square;
   line-height: 1.5;
-  margin-bottom: 15px;
-}
-
-ul,
-ol {
-  margin: 0 0 20px 50px;
-}
-
-li {
-  font-size: 20px;
+  margin-left: 15px;
   margin-bottom: 10px;
 }
 
-li:first-child {
-  font-weight: bold;
-}
+/* Buttons and links */
 
-li:last-child {
-  margin-bottom: 0;
-  font-style: italic;
-}
-
-#author {
-  font-style: italic;
-  font-size: 18px;
-}
-
-#copyright {
-  font-size: 16px;
-}
-
-.related-author {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.related-post {
-  list-style: none;
-  margin-left: 0;
-}
-
-a:link {
-  color: #1098ad;
-  text-decoration: none;
-}
-
-a:visited {
-  color: #1098ad;
-}
-
-a:hover,
-a:active {
-  color: orangered;
-  font-weight: bold;
-  text-decoration: underline solid orangered;
-}
-
-.post-img {
-  width: 100%;
-  height: auto;
-}
-
-nav a:link {
+.details-link:link,
+.details-link:visited {
   display: inline-block;
-  margin-right: 30px;
-  margin-top: 10px;
+  color: #000;
+  text-decoration: underline;
+  margin-bottom: 10px;
 }
 
-nav a:link:last-child {
+.details-link:hover,
+.details-link:active {
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.add-to-cart {
+  border: 0;
+  background-color: #000;
+  color: #ffffff;
+  border-top: 3px solid #000;
+  text-transform: uppercase;
+  font-size: 24px;
+  width: 100%;
+  padding: 20px 20px;
+}
+
+.add-to-cart:hover {
+  color: #000;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.add-to-cart:active {
+  background-color: #e2e2e2;
+}
+
+/* color options */
+
+.color-option {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 15px;
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+.color-option {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 15px;
+  border: 2px solid #333;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.color-option:hover {
+  border: 2px solid rgb(197, 197, 197);
+}
+
+.color-option:active {
+  opacity: 0.75;
+}
+
+.color-option:first-child {
+  background-color: #000;
+}
+
+.color-option:nth-child(2) {
+  background-color: #0077ff;
+}
+
+.color-option:nth-child(3) {
+  background-color: #ff49d1;
+}
+
+.color-option:nth-child(4) {
+  background-color: #f0ff1e;
+}
+
+.color-option:nth-child(5) {
+  background-color: #00ca54;
+}
+
+.color-option:last-child {
+  background-color: #66432c;
   margin-right: 0;
 }
 
-button {
-  font-size: 22px;
-  padding: 20px;
-  cursor: pointer;
-  position: absolute;
-  bottom: 50px;
-  right: 50px;
-}
+/* FLOAT LAYOUT */
 
-h1::first-letter {
-  font-style: normal;
-  margin-right: 5px;
-}
-
-/* adjacent (first) sibling selector */
-h3 + p::first-line {
-  font-weight: 600;
-}
-
-/* after and before can both be used herre when using absolute positioning. After = last child of element and efore is first.*/
-h2::after {
-  content: "TOP ARTICLE";
-  background-color: #ffe70e;
-  color: #000;
-  font-size: 16px;
-  padding: 5px 10px;
-  display: inline-block;
-  position: absolute;
-  top: -20px;
-  right: -40px;
-}
-
-/* floats */
-
-.author-img {
-  float: left;
-  margin-bottom: 20px;
-}
-
-.author {
-  float: left;
-  margin-top: 10px;
-  margin-left: 20px;
-}
-
-h1 {
-  float: left;
-}
-
-nav {
-  float: right;
-}
-
-.clear {
-  clear: both;
-}
-
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-article {
-  width: 825px;
-  float: left;
-}
-
-aside {
+.column {
   width: 300px;
-  float: right;
+  padding: 15px 25px;
 }
 
-footer {
-  clear: both;
+.c-one {
+  float: left;
+}
+
+.c-two {
+  float: right;
 }
