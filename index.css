@@ -15,55 +15,29 @@ body {
 /*/ ////// Styling the Header ///////////////////////////////////*/
 
 .hero-header {
-  background-color: grey;
+  background-color: rgb(27, 27, 27);
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("./resources/background.jpg");
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
 }
 
-.main-nav {
+/* ^^^^ Hero with background image with dark overlay. min-height 100vh to cover a full screen but expandable on mobiles so content doesn't overflow  */
+
+.hero-container {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 30px;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.main-nav-link:link,
-.main-nav-link:visited {
+  flex-flow: column wrap;
   color: #ccc;
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 1.2rem;
-  padding: 15px 0;
-  flex-basis: 150px;
+  margin: 0px auto;
+  max-width: 800px;
+  padding-top: 80px;
   text-align: center;
 }
 
-.main-nav-link:hover {
-  border-top: 3px solid orangered;
-  padding-top: 12px;
-  background-color: rgba(255, 68, 0, 0.6);
-}
-
-.main-nav-link:active {
-  background-color: rgba(255, 68, 0, 0.4);
-}
-
-.hero-about {
-  color: #ccc;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  margin-top: 100px;
-}
-
-.hero-about h1 {
+.hero-container h1 {
   font-family: "Bebas Neue";
-  letter-spacing: 10px;
+  letter-spacing: 7px;
+  line-height: 3rem;
   font-weight: 500;
   font-size: 2em;
 }
@@ -72,37 +46,47 @@ body {
   color: orangered;
 }
 
-.hero-about p {
+.hero-container p {
+  padding: 40px 0;
+  font-family: monospace;
   line-height: 1.4;
-  font-size: 1.1 rem;
+  font-size: 1rem;
   word-spacing: 0.2rem;
   font-weight: 500;
-  padding: 0 150px;
 }
 
-.hero-buttons {
+.main-nav {
   display: flex;
-  justify-content: center;
-  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  min-height: 100px;
+  gap: 10px;
+  max-width: 500px;
+  margin: 40px auto;
 }
 
-.hero-button:link,
-.hero-button:visited {
-  padding: 10px 15px;
-  text-decoration: none;
-  color: #ddd;
-  flex: 1 0 120px;
+.button:link,
+.button:visited {
+  font-family: monospace;
+  letter-spacing: 0.2rem;
+  font-size: 1.1rem;
   text-align: center;
+  text-decoration: none;
+  color: #ccc;
+  background-color: rgba(0, 0, 0, 0.3);
+  min-width: 110px;
   border-radius: 20px;
-  font-weight: 600;
   border: 2px solid orangered;
+  padding: 5px 20px;
 }
 
-.hero-button:hover {
+.button:hover {
   background-color: orangered;
 }
 
-.hero-button:active {
+.button:active {
+  color: #aaa;
   background-color: rgb(184, 50, 2);
   border: 2px solid rgb(184, 50, 2);
 }
@@ -168,3 +152,15 @@ p {
 }
 
 /*/ ///// Styling Contact Me Section //////////////////////////////////*/
+
+@media only screen and (max-width: 600px) {
+  .main-nav {
+    display: block;
+  }
+
+  .main-nav a {
+    display: block;
+    margin-bottom: 15px;
+    line-height: 60px;
+  }
+}
