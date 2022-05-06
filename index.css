@@ -47,7 +47,7 @@ body {
 }
 
 .hero-container p {
-  padding: 40px 0;
+  padding: 40px 10px;
   font-family: monospace;
   line-height: 1.4;
   font-size: 1rem;
@@ -91,12 +91,24 @@ body {
   border: 2px solid rgb(184, 50, 2);
 }
 
-/*//////// Styling Project Section ///////////////////////////*/
+/*//////// Project section Flexbox styling  ///////////////////////////*/
 
-.projects-section {
-  height: 100vh;
-  background-color: rgb(17, 17, 17);
+.projects-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 80px;
 }
+
+.project {
+  display: block;
+  flex: 0 0 200px;
+  height: 200px;
+}
+
+/* Project section - aesthetic styling */
 
 .projects-header {
   font-family: "Bebas Neue";
@@ -108,25 +120,10 @@ body {
   color: orangered;
 }
 
-.project-list {
-  margin: 0 5%;
-  display: flex;
-  justify-content: space-around;
-  gap: 30px;
-  margin: 0 150;
-}
-
-.project {
-  display: block;
-  border: 2px solid orangered;
-  flex: 1 1;
-  height: 220px;
-  text-align: center;
-}
-
 .project h3,
 p {
-  margin: 20px 10px 10px 10px;
+  padding: 40px 10px 10px 10px;
+  text-align: center;
 }
 
 .project p {
@@ -138,7 +135,6 @@ p {
   background-color: #ccc;
   text-decoration: none;
   color: #222;
-  border-radius: 10px;
 }
 
 .project:hover {
